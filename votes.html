@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Monitor Voting</title>
+    <link rel="stylesheet" href="votes.css">
+</head>
+<body>
+    <h1>Class Monitor Voting System</h1>
+
+    <div>
+        <label for="username">Enter your name:</label>
+        <input type="text" id="username" placeholder="Your name">
+    </div>
+
+    <table border="1" style="margin: 20px auto; text-align: center;">
+        <thead>
+            <tr>
+                <th>Candidate</th>
+                <th>Action</th>
+                <th>Total Votes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Abhay</td>
+                <td><button onclick="vote('Abhay')">Vote for Abhay</button></td>
+                <td id="votesAbhay">Votes: 0</td>
+            </tr>
+            <tr>
+                <td>Shruti</td>
+                <td><button onclick="vote('Shruti')">Vote for Shruti</button></td>
+                <td id="votesShruti">Votes: 0</td>
+            </tr>
+            <tr>
+                <td>Sagar</td>
+                <td><button onclick="vote('Sagar')">Vote for Sagar</button></td>
+                <td id="votesSagar">Votes: 0</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="votes.js"></script>
+</body>
+</html>
